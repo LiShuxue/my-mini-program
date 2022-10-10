@@ -1,0 +1,10 @@
+{
+  "name": "my-mini-program",
+  "version": "1.0.0",
+  "description": "my-mini-program",
+  "author": "Lsx",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.5"
+  }
+}

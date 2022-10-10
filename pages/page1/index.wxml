@@ -1,0 +1,8 @@
+<text class="public-style">page1</text>
+<view>{{text}}</view>
+
+<button bindtap="changeText">更新文本</button>
+
+<button bindtap="gotoPage3">跳转</button>
+
+<my-com custom="test" bindmyevent="childEvent"></my-com>

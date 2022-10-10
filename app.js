@@ -1,19 +1,26 @@
-// app.js
 App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    console.log("小程序初始化");
+  },
+  onShow: () => {
+    console.log("小程序启动或切前台");
+  },
+  onHide() {
+    console.log("小程序切后台");
+  },
+  onError() {
+    console.log("发现错误");
+  },
+  onError() {
+    console.log("发现错误");
+  },
+  onPageNotFound: () => {
+    console.log("页面不存在");
   },
   globalData: {
-    userInfo: null
+    text: "这是全局数据"
+  },
+  globalFunction() {
+    console.log("这是全局函数");
   }
 })

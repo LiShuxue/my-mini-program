@@ -1,0 +1,2 @@
+<!--components/my-com/index.wxml-->
+<text bindtap="test">自定义组件+{{custom}}</text>
